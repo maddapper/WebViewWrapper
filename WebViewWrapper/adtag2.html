@@ -1,0 +1,24 @@
+<div align="center" id="nextshark_mrec_smartnews">
+        <script data-cfasync="false" type="text/javascript">
+            var freestar = freestar || {};
+            freestar.queue = freestar.queue || [];
+            freestar.config = freestar.config || {};
+            freestar.config.enabled_slots = [];
+            freestar.initCallback = function () {
+                (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false: freestar
+                    .newAdSlots(freestar.config.enabled_slots)
+            }
+            freestar.config.disabledProducts = {
+                stickyFooter: true,
+                googleInterstitial: true
+            }
+            freestar.queue.push(function () {
+                googletag.pubads().set('page_url', 'https://www.nextshark.com/');
+                freestar.newAdSlots({
+                    placementName: "nextshark_mrec_smartnews",
+                    slotId: "nextshark_mrec_smartnews"
+                });
+            });
+        </script>
+        <script src="https://a.pub.network/nextshark-com/pubfig.min.js" async></script>
+    </div>

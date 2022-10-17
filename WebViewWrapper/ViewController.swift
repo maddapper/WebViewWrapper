@@ -48,9 +48,28 @@ class ViewController: UIViewController, DynamicWebViewDelegate {
         DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
     }
     
+    func htmlFromTagFile() -> String? {
+        guard let filePath = Bundle.main.path(forResource: "adtag", ofType: "html") else {
+           print ("File reading error")
+           return nil
+        }
+
+        do {
+            let contents = try String(contentsOfFile: filePath, encoding: .utf8)
+            return contents
+        } catch {
+            print ("File HTML error")
+        }
+        return nil
+    }
+    
     
     func loadWebView() {
-        webView.loadHTML("<div align=\"center\" id=\"nextshark_mrec_smartnews\">\n        <script data-cfasync=\"false\" type=\"text/javascript\">\n            var freestar = freestar || {};\n            freestar.queue = freestar.queue || [];\n            freestar.config = freestar.config || {};\n            freestar.config.enabled_slots = [];\n            freestar.initCallback = function () {\n                (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false: freestar\n                    .newAdSlots(freestar.config.enabled_slots)\n            }\n            freestar.config.disabledProducts = {\n                stickyFooter: true,\n                googleInterstitial: true\n            }\n            freestar.queue.push(function () {\n                googletag.pubads().set('page_url', 'https://www.nextshark.com/');\n                freestar.newAdSlots({\n                    placementName: \"nextshark_mrec_smartnews\",\n                    slotId: \"nextshark_mrec_smartnews\"\n                });\n            });\n        </script>\n        <script src=\"https://a.pub.network/nextshark-com/pubfig.min.js\" async></script>\n    </div>")
+        let html = self.htmlFromTagFile()
+        guard let html = html else {
+            return
+        }
+        webView.loadHTML(html)
         
 //                webView.loadRequest(URLRequest(url: URL(string: "https://google.com")!))
     }

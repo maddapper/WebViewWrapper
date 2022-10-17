@@ -14,6 +14,8 @@
 		0510640021C2FB560036AF95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 051063FE21C2FB560036AF95 /* LaunchScreen.storyboard */; };
 		0510640B21C2FB570036AF95 /* WebViewWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510640A21C2FB570036AF95 /* WebViewWrapperTests.swift */; };
 		0510641621C2FC590036AF95 /* DynamicWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510641521C2FC590036AF95 /* DynamicWebView.swift */; };
+		FD3C4F3228FDFC5E00355078 /* adtag.html in Resources */ = {isa = PBXBuildFile; fileRef = FD3C4F3128FDFC5E00355078 /* adtag.html */; };
+		FD3C4F3428FDFD8300355078 /* adtag2.html in Resources */ = {isa = PBXBuildFile; fileRef = FD3C4F3328FDFD8300355078 /* adtag2.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		0510640A21C2FB570036AF95 /* WebViewWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWrapperTests.swift; sourceTree = "<group>"; };
 		0510640C21C2FB570036AF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0510641521C2FC590036AF95 /* DynamicWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicWebView.swift; sourceTree = "<group>"; };
+		FD3C4F3128FDFC5E00355078 /* adtag.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = adtag.html; sourceTree = "<group>"; };
+		FD3C4F3328FDFD8300355078 /* adtag2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = adtag2.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				051063FC21C2FB560036AF95 /* Assets.xcassets */,
 				051063FE21C2FB560036AF95 /* LaunchScreen.storyboard */,
 				0510640121C2FB560036AF95 /* Info.plist */,
+				FD3C4F3328FDFD8300355078 /* adtag2.html */,
+				FD3C4F3128FDFC5E00355078 /* adtag.html */,
 			);
 			path = WebViewWrapper;
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 			files = (
 				0510640021C2FB560036AF95 /* LaunchScreen.storyboard in Resources */,
 				051063FD21C2FB560036AF95 /* Assets.xcassets in Resources */,
+				FD3C4F3228FDFC5E00355078 /* adtag.html in Resources */,
 				051063FB21C2FB560036AF95 /* Main.storyboard in Resources */,
+				FD3C4F3428FDFD8300355078 /* adtag2.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
